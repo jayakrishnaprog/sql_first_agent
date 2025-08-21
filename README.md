@@ -1,9 +1,16 @@
-About Me
-I’m Jayakrishna M, an IT professional with 10+ years of experience. I began my career in Java & Spring Boot and have since expanded into Python, LLMs, AI Agents, NumPy, and Pandas. Recently, I built my first SQL Agent project.
+Here’s why it qualifies as an **SQL Agent** and how it works:
 
-📩 Feel free to reach out: mjk7650@gmail.com
+1️.Accepts **natural language input** (e.g., *“Show all employees in the sales department”*).
+2️.Converts it into a valid **SQL query** using Groq’s LLM (via LangChain).
+3️.Dynamically **fetches table schema** (columns & types) from MySQL for accurate SQL generation.
+4️.Injects this schema into the **LLM prompt** for context-aware queries.
+5️.Differentiates between raw SQL and NL input, handling both seamlessly.
+6️.Executes **SELECT, INSERT, UPDATE, DELETE** on the database.
+7️.Cleans up LLM output by removing markdown/code artifacts like \`\`\`sql.
+8️.Exposes everything through a **FastAPI endpoint**, making it easy for clients to query via API.
 
-#How run locally
+
+#How to run locally
 cd sql-agent
 pip install -r requirements.txt
 # (optional) set env vars or create .env
@@ -69,4 +76,10 @@ Download
     }
   ]
 }
+
+About Me
+I’m Jayakrishna M, an IT professional with 10+ years of experience. I began my career in Java & Spring Boot and have since expanded into Python, LLMs, AI Agents, NumPy, and Pandas. Recently, I built my first SQL Agent project.
+
+📩 Feel free to reach out: mjk7650@gmail.com
+
 
