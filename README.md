@@ -1,5 +1,5 @@
 About Me
-I’m Jayakrishna Mudimanchi, an IT professional with 10+ years of experience. I began my career in Java & Spring Boot and have since expanded into Python, LLMs, AI Agents, NumPy, and Pandas. Recently, I built my first SQL Agent project.
+I’m Jayakrishna M, an IT professional with 10+ years of experience. I began my career in Java & Spring Boot and have since expanded into Python, LLMs, AI Agents, NumPy, and Pandas. Recently, I built my first SQL Agent project.
 
 📩 Feel free to reach out: mjk7650@gmail.com
 
