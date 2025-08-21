@@ -1,14 +1,20 @@
 Here’s why it qualifies as an **SQL Agent** and how it works:
 
 1️.Accepts **natural language input** (e.g., *“Show all employees in the sales department”*).
-2️.Converts it into a valid **SQL query** using Groq’s LLM (via LangChain).
-3️.Dynamically **fetches table schema** (columns & types) from MySQL for accurate SQL generation.
-4️.Injects this schema into the **LLM prompt** for context-aware queries.
-5️.Differentiates between raw SQL and NL input, handling both seamlessly.
-6️.Executes **SELECT, INSERT, UPDATE, DELETE** on the database.
-7️.Cleans up LLM output by removing markdown/code artifacts like \`\`\`sql.
-8️.Exposes everything through a **FastAPI endpoint**, making it easy for clients to query via API.
 
+2️.Converts it into a valid **SQL query** using Groq’s LLM (via LangChain).
+
+3️.Dynamically **fetches table schema** (columns & types) from MySQL for accurate SQL generation.
+
+4️.Injects this schema into the **LLM prompt** for context-aware queries.
+
+5️.Differentiates between raw SQL and NL input, handling both seamlessly.
+
+6️.Executes **SELECT, INSERT, UPDATE, DELETE** on the database.
+
+7️.Cleans up LLM output by removing markdown/code artifacts like \`\`\`sql.
+
+8️.Exposes everything through a **FastAPI endpoint**, making it easy for clients to query via API.
 
 #How to run locally
 cd sql-agent
