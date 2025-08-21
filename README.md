@@ -1,7 +1,7 @@
 About Me
 I’m Jayakrishna Mudimanchi, an IT professional with 10+ years of experience. I began my career in Java & Spring Boot and have since expanded into Python, LLMs, AI Agents, NumPy, and Pandas. Recently, I built my first SQL Agent project.
 
-📩 Feel free to reach out: jayaai7650@gmail.com
+📩 Feel free to reach out: mjk7650@gmail.com
 
 #How run locally
 cd sql-agent
@@ -48,3 +48,25 @@ curl -X POST http://localhost:8000/sqlagent \
 
 How to get token: https://console.groq.com/home
 just signup and get details.
+
+
+curl -X 'POST' \
+  'http://127.0.0.1:8000/sqlagent' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "sql": "add  data to  managers table  id 100216, manager_name  jaya"
+}'
+
+Response body
+Download
+{
+  "query": "INSERT INTO employee (EmpID, FirstName, LastName, Email, PhoneNumber, HireDate, JobTitle, Salary, DepartmentID) \nVALUES (100216, 'Jaya', NULL, NULL, NULL, NULL, 'Manager', NULL, NULL);",
+  "rows": [
+    {
+      "status": "success",
+      "affected_rows": 1
+    }
+  ]
+}
+
